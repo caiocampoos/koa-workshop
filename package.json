@@ -1,20 +1,24 @@
 {
+  "name": "src",
+  "version": "1.0.0",
+  "description": "koa and graphql boilerplate",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "jest"
+    "test": "test",
+    "start": "node ./src/server.js"
   },
   "author": "Caio Rosa",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "graphql": "^15.8.0",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
-    "koa-json": "^2.0.2",
-    "koa-logger": "^3.2.1",
-    "koa-router": "^12.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.4",
-    "nodemon": "^2.0.15"
+    "koa-cors": "^0.0.16",
+    "koa-graphql": "^0.12.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^12.0.0",
+    "mongodb": "^4.11.0",
+    "mongodb-client-encryption": "^2.3.0"
   }
 }
