@@ -22,10 +22,6 @@ run
 
 have fun 
 
-## Help
-
-
-
 ## Authors
 
 Contributors names and contact info
