@@ -13,10 +13,12 @@ Later implementation of relay, working on learning the basics
 edit .env with a usable mongodb uri on MONGO_URI
 
 ### Installing
-
-run * npm install 
-run * npm run relay
-run * npm run dev 
+run 
+* npm install 
+run 
+* npm run relay
+run 
+* npm run dev 
 
 have fun 
 
