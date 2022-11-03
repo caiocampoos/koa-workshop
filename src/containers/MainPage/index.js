@@ -16,7 +16,7 @@ export default class MainPage extends React.Component {
           }
         `}
         variables={{}}
-        render={({ error, props }) => {
+        render={({ error, props}) => {
           if (error) {
             return <div>Error!</div>;
           }
@@ -24,7 +24,7 @@ export default class MainPage extends React.Component {
             return <div>Loading...</div>;
           }
           return props.events.map((event, content) => {
-            return <p  key={event._id} >id:{event._id} content: {event.content} </p>;
+            return <p key={event._id} > id:{event._id} content: {event.content}</p>;
          });
         }}
       />

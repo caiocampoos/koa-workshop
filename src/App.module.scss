@@ -31,15 +31,16 @@
   border-top-right-radius: 4px;
 }
 
-input[type=text] {
-  width: 100%;
-  border-radius: 3px;
-  border: none;
-  background-color: white;
-  margin-top: -8px;
-  height: 25px;
-  color: #666;
-  padding: 5px;
+.column {
+  float: left;
+  width: 30%;
+  margin: 10px
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .bar {
@@ -56,6 +57,9 @@ input[type=text] {
 @media screen and (max-width: 992px) {
   p, .btn, .btn_1, input, div, span, h4, sup {
     font-size: 99% !important;
+  }
+  .column{
+    width: 100%;
   }
   h1 {
     font-size: 34px !important;
@@ -81,6 +85,9 @@ input[type=text] {
 @media screen and (max-width: 768px) {
   p, .btn, .btn_1, input, div, span, h4, sup {
     font-size: 97% !important;
+  }
+  .column{
+    width: 80%;
   }
   h1 {
     font-size: 30px !important;
