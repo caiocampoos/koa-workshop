@@ -4,9 +4,6 @@ let mongoDB;
 
 const setupDB = callback => {
   
-  console.log(uri)
-  
-
   MongoClient.connect(
     uri,
     { useNewUrlParser: true, useUnifiedTopology: true },

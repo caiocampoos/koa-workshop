@@ -11,12 +11,39 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [
-            {
-                test: /\.(js|jsx)$/,
-                loader: 'babel-loader',
-            },
-        ]
+    rules: [{
+      test: /\.jsx?$/,
+      use: 'babel-loader',
+      exclude: /node_modules/
+    }, {
+      test: /\.css$/,
+      use: [
+        'style-loader',
+        'css-loader'
+      ],
+    }, {
+      test: /\.scss$/,
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+        },
+        {
+          loader: 'postcss-loader'
+        }
+      ]
+    }, {
+      test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+      use: [
+        {
+          loader: 'url-loader',
+          options: {
+            limit: 1000,
+            name: 'assets/[hash].[ext]'
+          }
+        }
+      ]
+    }]
   },
   devServer: {
     port: 3000,

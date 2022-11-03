@@ -10,5 +10,5 @@ type Event {
 }
 
 type Query {
-  events(id: String): Event
+  events: [Event]
 }
