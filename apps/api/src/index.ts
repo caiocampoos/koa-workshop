@@ -9,6 +9,6 @@ import { Logger } from './utils/logger';
     catch { process.exit(1); }
     
     server.listen(process.env.PORT, () => {
-        Logger.info(`Server started on port http:localhost:${process.env.PORT}`);
+        Logger.info(`Server started on port http://localhost:${process.env.PORT}/graphql`);
     });
 })();

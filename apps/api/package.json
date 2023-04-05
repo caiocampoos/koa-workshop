@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --external:express --external:cors",
+    "generateSchema": "ts-node scripts/generateSchema.ts",
     "dev": "nodemon --watch src --exec ts-node src/index.ts"
   },
   "keywords": [],
