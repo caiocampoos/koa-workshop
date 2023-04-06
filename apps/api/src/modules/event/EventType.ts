@@ -15,7 +15,7 @@ export const EventType = new GraphQLObjectType<Event>({
     id: globalIdField('Event', (event) => event._id.toString()),
     event: {
       type: new GraphQLNonNull(GraphQLString),
-      resolve: (event) => event.content,
+      resolve: (event) => event.content ,
     }
   }),
 });
