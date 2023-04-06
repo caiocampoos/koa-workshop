@@ -8,14 +8,20 @@ Getting Started
 Dependencies
 edit .env with a usable mongodb uri on MONGO_URI
 
-Installing
+### Local Installation
+
+```
 pnpm install
+
 pnpm run build
+
 pnpm run dev
 
+```
 
 
-WIP
+
+WIP:
 web
 
 Authors
