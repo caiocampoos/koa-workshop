@@ -9,7 +9,14 @@ Dependencies
 edit .env with a usable mongodb uri on MONGO_URI
 
 Installing
+pnpm install
+pnpm run build
+pnpm run dev
 
+
+
+WIP
+web
 
 Authors
 Contributors names and contact info
